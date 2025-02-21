@@ -1,0 +1,18 @@
+.box{
+    margin-top: 50px;
+    margin-left: 150px;
+
+
+}
+
+.anime-info{
+    width: 20%;
+    margin-bottom: 40px;
+}
+
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}

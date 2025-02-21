@@ -1,31 +1,80 @@
-.box1{
-    background-color: aliceblue;
-    width: 75%;
-    display: flex;
-    margin-left: 30px;
-    
-}
-
-.box2{
-    background-color: aqua;
-    flex: 1;
-}
-
-.container{
+/* Container for the entire page */
+.container {
     margin-top: 20px;
-    background-color: green;
     display: flex;
     height: 100vh;
-    
 }
 
-.bbox1{
-    background-color: green;
+/* Left section for video and episodes */
+.box1 {
+
+    width: 75%; /* Made it a bit smaller so the video section can be bigger */
+    display: flex;
+    margin-left: 30px;
+}
+
+/* Video section */
+.bbox2 {
+
+    flex: 1;
+    padding: 10px;
+}
+
+.video-section iframe {
+    width: 100%; /* Takes up full width of its container */
+    height: 80vh; /* Makes the iframe 90% of the viewport height */
+    border: none;
+}
+
+
+/* Right section for anime details */
+.box2 {
+
+    flex: 1; /* Made it a bit smaller to allow the video section to be bigger */
+    padding: 20px;
+}
+
+.anime-info {
+    text-align: center;
+}
+
+.anime-poster {
+    width: 80%;
+    border-radius: 8px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Episode section styles */
+.episode-section {
     width: 40vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
 }
 
-.bbox2{
-    background-color: blue;
-    flex: 1;
+.episode-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.episode-section p {
+    font-size: 18px;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.episode-title {
+    white-space: nowrap; /* Prevents the text from wrapping to the next line */
+    overflow: hidden; /* Hides any text that goes beyond the container's width */
+    text-overflow: ellipsis; /* Adds the "..." at the end of the text when it's truncated */
+    width: 100%; /* Ensures the element's width is controlled by the parent container */
 }
